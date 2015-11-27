@@ -11,7 +11,7 @@ namespace N4_ClubSocial.Modelo
         private String nombre;
         private ArrayList facturas;
         private ArrayList autorizados;
-        #region 
+        #endregion 
 
         #region Propiedades
         public String Cedula

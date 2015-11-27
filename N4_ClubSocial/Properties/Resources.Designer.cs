@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace N4_ClubSocial.Properties
-{
-
-
+namespace N4_ClubSocial.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,230 @@ namespace N4_ClubSocial.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("N4_ClubSocial.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Afiliar.
+        /// </summary>
+        internal static string Afiliar {
+            get {
+                return ResourceManager.GetString("Afiliar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Agregar Autorizado.
+        /// </summary>
+        internal static string AgregarAutorizado {
+            get {
+                return ResourceManager.GetString("AgregarAutorizado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Autorizados.
+        /// </summary>
+        internal static string Autorizados {
+            get {
+                return ResourceManager.GetString("Autorizados", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Buscar.
+        /// </summary>
+        internal static string Buscar {
+            get {
+                return ResourceManager.GetString("Buscar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Busqueda de Socio.
+        /// </summary>
+        internal static string BusquedaDeSocio {
+            get {
+                return ResourceManager.GetString("BusquedaDeSocio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cédula.
+        /// </summary>
+        internal static string Cedula {
+            get {
+                return ResourceManager.GetString("Cedula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cédula Socio.
+        /// </summary>
+        internal static string CedulaSocio {
+            get {
+                return ResourceManager.GetString("CedulaSocio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cliente.
+        /// </summary>
+        internal static string Cliente {
+            get {
+                return ResourceManager.GetString("Cliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Concepto.
+        /// </summary>
+        internal static string Concepto {
+            get {
+                return ResourceManager.GetString("Concepto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Consumos.
+        /// </summary>
+        internal static string Consumos {
+            get {
+                return ResourceManager.GetString("Consumos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contabilidad.
+        /// </summary>
+        internal static string Contabilidad {
+            get {
+                return ResourceManager.GetString("Contabilidad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Datos Personales.
+        /// </summary>
+        internal static string DatosPersonales {
+            get {
+                return ResourceManager.GetString("DatosPersonales", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Facturas.
+        /// </summary>
+        internal static string Facturas {
+            get {
+                return ResourceManager.GetString("Facturas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        internal static string Nombre {
+            get {
+                return ResourceManager.GetString("Nombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Club.
+        /// </summary>
+        internal static string NombreApp {
+            get {
+                return ResourceManager.GetString("NombreApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opción 1.
+        /// </summary>
+        internal static string Opcion1 {
+            get {
+                return ResourceManager.GetString("Opcion1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opción 2.
+        /// </summary>
+        internal static string Opcion2 {
+            get {
+                return ResourceManager.GetString("Opcion2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pagar Factura.
+        /// </summary>
+        internal static string PagarFactura {
+            get {
+                return ResourceManager.GetString("PagarFactura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registrar.
+        /// </summary>
+        internal static string Registrar {
+            get {
+                return ResourceManager.GetString("Registrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registro de Consumos.
+        /// </summary>
+        internal static string RegistroConsumos {
+            get {
+                return ResourceManager.GetString("RegistroConsumos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valor.
+        /// </summary>
+        internal static string Valor {
+            get {
+                return ResourceManager.GetString("Valor", resourceCulture);
             }
         }
     }
