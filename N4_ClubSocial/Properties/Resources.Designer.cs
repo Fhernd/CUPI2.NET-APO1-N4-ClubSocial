@@ -61,6 +61,15 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Advertencia.
+        /// </summary>
+        internal static string Advertencia {
+            get {
+                return ResourceManager.GetString("Advertencia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Afiliar.
         /// </summary>
         internal static string Afiliar {
@@ -165,6 +174,33 @@ namespace N4_ClubSocial.Properties {
         internal static string DatosPersonales {
             get {
                 return ResourceManager.GetString("DatosPersonales", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El valor de la cédula debe ser numérico..
+        /// </summary>
+        internal static string DebeCedulaSerNumerico {
+            get {
+                return ResourceManager.GetString("DebeCedulaSerNumerico", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debe ingresar un número de cédula..
+        /// </summary>
+        internal static string DebeIngresarCedula {
+            get {
+                return ResourceManager.GetString("DebeIngresarCedula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debe ingresar el nombre del socio..
+        /// </summary>
+        internal static string DebeIngresarNombre {
+            get {
+                return ResourceManager.GetString("DebeIngresarNombre", resourceCulture);
             }
         }
         

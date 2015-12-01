@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;ctlAfiliacion.Name" xml:space="preserve">
-    <value>ctlAfiliacion</value>
-  </data>
-  <data name="&gt;&gt;ctlAfiliacion.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlAfiliacion, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlAfiliacion.Parent" xml:space="preserve">
-    <value>tpgAfiliar</value>
-  </data>
-  <data name="&gt;&gt;ctlAfiliacion.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tpgAfiliar.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
@@ -162,18 +150,6 @@
   <data name="&gt;&gt;tpgAfiliar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;ctlAutorizados.Name" xml:space="preserve">
-    <value>ctlAutorizados</value>
-  </data>
-  <data name="&gt;&gt;ctlAutorizados.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlAutorizados, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlAutorizados.Parent" xml:space="preserve">
-    <value>tpgAutorizados</value>
-  </data>
-  <data name="&gt;&gt;ctlAutorizados.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="tpgAutorizados.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
@@ -203,6 +179,24 @@
   </data>
   <data name="&gt;&gt;tpgAutorizados.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="ctlConsumos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ctlConsumos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt</value>
+  </data>
+  <data name="ctlConsumos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
+  </data>
+  <data name="ctlConsumos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ctlConsumos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 344</value>
+  </data>
+  <data name="ctlConsumos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;ctlConsumos.Name" xml:space="preserve">
     <value>ctlConsumos</value>
@@ -245,6 +239,24 @@
   </data>
   <data name="&gt;&gt;tpgConsumos.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="ctlFacturas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ctlFacturas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt</value>
+  </data>
+  <data name="ctlFacturas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
+  </data>
+  <data name="ctlFacturas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ctlFacturas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 344</value>
+  </data>
+  <data name="ctlFacturas.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;ctlFacturas.Name" xml:space="preserve">
     <value>ctlFacturas</value>
@@ -373,126 +385,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tabOperaciones.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ctlAfiliacion.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ctlAfiliacion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 8.25pt</value>
-  </data>
-  <data name="ctlAfiliacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="ctlAfiliacion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 5, 3, 5</value>
-  </data>
-  <data name="ctlAfiliacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 344</value>
-  </data>
-  <data name="ctlAfiliacion.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ctlAfiliacion.Name" xml:space="preserve">
-    <value>ctlAfiliacion</value>
-  </data>
-  <data name="&gt;&gt;ctlAfiliacion.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlAfiliacion, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlAfiliacion.Parent" xml:space="preserve">
-    <value>tpgAfiliar</value>
-  </data>
-  <data name="&gt;&gt;ctlAfiliacion.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ctlAutorizados.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ctlAutorizados.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 8.25pt</value>
-  </data>
-  <data name="ctlAutorizados.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="ctlAutorizados.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="ctlAutorizados.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 344</value>
-  </data>
-  <data name="ctlAutorizados.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ctlAutorizados.Name" xml:space="preserve">
-    <value>ctlAutorizados</value>
-  </data>
-  <data name="&gt;&gt;ctlAutorizados.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlAutorizados, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlAutorizados.Parent" xml:space="preserve">
-    <value>tpgAutorizados</value>
-  </data>
-  <data name="&gt;&gt;ctlAutorizados.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ctlConsumos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ctlConsumos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 8.25pt</value>
-  </data>
-  <data name="ctlConsumos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="ctlConsumos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="ctlConsumos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 344</value>
-  </data>
-  <data name="ctlConsumos.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ctlConsumos.Name" xml:space="preserve">
-    <value>ctlConsumos</value>
-  </data>
-  <data name="&gt;&gt;ctlConsumos.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlConsumos, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlConsumos.Parent" xml:space="preserve">
-    <value>tpgConsumos</value>
-  </data>
-  <data name="&gt;&gt;ctlConsumos.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ctlFacturas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ctlFacturas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 8.25pt</value>
-  </data>
-  <data name="ctlFacturas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="ctlFacturas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="ctlFacturas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 344</value>
-  </data>
-  <data name="ctlFacturas.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ctlFacturas.Name" xml:space="preserve">
-    <value>ctlFacturas</value>
-  </data>
-  <data name="&gt;&gt;ctlFacturas.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlFacturas, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlFacturas.Parent" xml:space="preserve">
-    <value>tpgFacturas</value>
-  </data>
-  <data name="&gt;&gt;ctlFacturas.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

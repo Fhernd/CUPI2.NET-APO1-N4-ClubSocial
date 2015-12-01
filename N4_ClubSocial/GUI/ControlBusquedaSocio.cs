@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace N4_ClubSocial.GUI
 {
-    public partial class ControlAutorizados : UserControl
+    public partial class ControlBusquedaSocio: UserControl
     {
-        public ControlAutorizados()
+        public ControlBusquedaSocio()
         {
             InitializeComponent();
             ConfiguracionComponentes();
@@ -20,9 +20,9 @@ namespace N4_ClubSocial.GUI
 
         private void ConfiguracionComponentes()
         {
-            gbxAutorizados.Text = Properties.Resources.Autorizados;
-            lblNombre.Text = Properties.Resources.Nombre;
-            btnAgregarAutorizado.Text = Properties.Resources.AgregarAutorizado;
+            gbxBusquedaSocio.Text = Properties.Resources.BusquedaDeSocio;
+            lblCedulaSocio.Text = Properties.Resources.CedulaSocio;
+            btnBuscarSocio.Text = Properties.Resources.Buscar;
         }
     }
 }

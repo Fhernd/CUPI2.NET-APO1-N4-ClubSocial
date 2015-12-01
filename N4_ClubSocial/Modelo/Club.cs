@@ -18,15 +18,15 @@ namespace N4_ClubSocial.Modelo
         #endregion
 
         #region Métodos
-        public void AfiliarSocio(string cedula, string nombre)
+        public void AfiliarSocio(Socio socio)
         {
             // Revisa que no existe un socio con la misma cédula:
-            Socio socio = BuscarSocio(cedula);
+            Socio socioEncontrado = BuscarSocio(socio.Cedula);
 
-            if (socio == null)
+            if (socioEncontrado == null)
             {
                 // Crea una nueva instancia de Socio:
-                Socio nuevoSocio = new Socio(cedula, nombre);
+                Socio nuevoSocio = new Socio(socio.Cedula, socio.Nombre);
 
                 // Se agrega el nuevo socio al club:
                 socios.Add(nuevoSocio);

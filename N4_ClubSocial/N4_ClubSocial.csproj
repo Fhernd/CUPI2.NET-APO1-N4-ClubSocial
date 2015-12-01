@@ -61,6 +61,12 @@
     <Compile Include="GUI\ControlAutorizados.Designer.cs">
       <DependentUpon>ControlAutorizados.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ControlBusquedaSocio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ControlBusquedaSocio.Designer.cs">
+      <DependentUpon>ControlBusquedaSocio.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ControlConsumos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ControlAutorizados.resx">
       <DependentUpon>ControlAutorizados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ControlBusquedaSocio.resx">
+      <DependentUpon>ControlBusquedaSocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ControlConsumos.resx">
       <DependentUpon>ControlConsumos.cs</DependentUpon>

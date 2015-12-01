@@ -1,4 +1,7 @@
-﻿namespace N4_ClubSocial
+﻿using System;
+using N4_ClubSocial.Modelo;
+
+namespace N4_ClubSocial
 {
     partial class Principal
     {
@@ -31,9 +34,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.tabOperaciones = new System.Windows.Forms.TabControl();
             this.tpgAfiliar = new System.Windows.Forms.TabPage();
-            this.ctlAfiliacion = new N4_ClubSocial.GUI.ControlAfiliacion();
             this.tpgAutorizados = new System.Windows.Forms.TabPage();
-            this.ctlAutorizados = new N4_ClubSocial.GUI.ControlAutorizados();
             this.tpgConsumos = new System.Windows.Forms.TabPage();
             this.ctlConsumos = new N4_ClubSocial.GUI.ControlConsumos();
             this.tpgFacturas = new System.Windows.Forms.TabPage();
@@ -41,8 +42,6 @@
             this.tpgContabilidad = new System.Windows.Forms.TabPage();
             this.ctlContabilidad = new N4_ClubSocial.GUI.ControlContabilidad();
             this.tabOperaciones.SuspendLayout();
-            this.tpgAfiliar.SuspendLayout();
-            this.tpgAutorizados.SuspendLayout();
             this.tpgConsumos.SuspendLayout();
             this.tpgFacturas.SuspendLayout();
             this.tpgContabilidad.SuspendLayout();
@@ -62,27 +61,15 @@
             // 
             // tpgAfiliar
             // 
-            this.tpgAfiliar.Controls.Add(this.ctlAfiliacion);
             resources.ApplyResources(this.tpgAfiliar, "tpgAfiliar");
             this.tpgAfiliar.Name = "tpgAfiliar";
             this.tpgAfiliar.UseVisualStyleBackColor = true;
             // 
-            // ctlAfiliacion
-            // 
-            resources.ApplyResources(this.ctlAfiliacion, "ctlAfiliacion");
-            this.ctlAfiliacion.Name = "ctlAfiliacion";
-            // 
             // tpgAutorizados
             // 
-            this.tpgAutorizados.Controls.Add(this.ctlAutorizados);
             resources.ApplyResources(this.tpgAutorizados, "tpgAutorizados");
             this.tpgAutorizados.Name = "tpgAutorizados";
             this.tpgAutorizados.UseVisualStyleBackColor = true;
-            // 
-            // ctlAutorizados
-            // 
-            resources.ApplyResources(this.ctlAutorizados, "ctlAutorizados");
-            this.ctlAutorizados.Name = "ctlAutorizados";
             // 
             // tpgConsumos
             // 
@@ -127,14 +114,12 @@
             this.Controls.Add(this.tabOperaciones);
             this.Name = "Principal";
             this.tabOperaciones.ResumeLayout(false);
-            this.tpgAfiliar.ResumeLayout(false);
-            this.tpgAutorizados.ResumeLayout(false);
             this.tpgConsumos.ResumeLayout(false);
             this.tpgFacturas.ResumeLayout(false);
             this.tpgContabilidad.ResumeLayout(false);
             this.ResumeLayout(false);
 
-        }
+        }   
 
         #endregion
 
@@ -144,8 +129,6 @@
         private System.Windows.Forms.TabPage tpgConsumos;
         private System.Windows.Forms.TabPage tpgFacturas;
         private System.Windows.Forms.TabPage tpgContabilidad;
-        private GUI.ControlAfiliacion ctlAfiliacion;
-        private GUI.ControlAutorizados ctlAutorizados;
         private GUI.ControlConsumos ctlConsumos;
         private GUI.ControlFacturas ctlFacturas;
         private GUI.ControlContabilidad ctlContabilidad;

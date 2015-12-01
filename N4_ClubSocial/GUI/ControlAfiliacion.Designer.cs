@@ -60,6 +60,7 @@
             this.btnAfiliar.TabIndex = 4;
             this.btnAfiliar.Text = "button1";
             this.btnAfiliar.UseVisualStyleBackColor = true;
+            this.btnAfiliar.Click += new System.EventHandler(this.btnAfiliar_Click);
             // 
             // txtCedula
             // 

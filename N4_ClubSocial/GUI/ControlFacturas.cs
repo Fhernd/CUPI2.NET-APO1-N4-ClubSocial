@@ -20,10 +20,6 @@ namespace N4_ClubSocial.GUI
 
         private void ConfiguracionComponentes()
         {
-            gbxBusquedaSocio.Text = Properties.Resources.BusquedaDeSocio;
-            lblCedulaSocio.Text = Properties.Resources.CedulaSocio;
-            btnBuscarSocio.Text = Properties.Resources.Buscar;
-
             gbxFacturas.Text = Properties.Resources.Facturas;
             btnPagarFactura.Text = Properties.Resources.PagarFactura;
         }
