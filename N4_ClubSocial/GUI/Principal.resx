@@ -180,36 +180,6 @@
   <data name="&gt;&gt;tpgAutorizados.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="ctlConsumos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ctlConsumos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 8.25pt</value>
-  </data>
-  <data name="ctlConsumos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="ctlConsumos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="ctlConsumos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 344</value>
-  </data>
-  <data name="ctlConsumos.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ctlConsumos.Name" xml:space="preserve">
-    <value>ctlConsumos</value>
-  </data>
-  <data name="&gt;&gt;ctlConsumos.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlConsumos, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlConsumos.Parent" xml:space="preserve">
-    <value>tpgConsumos</value>
-  </data>
-  <data name="&gt;&gt;ctlConsumos.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="tpgConsumos.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
@@ -240,36 +210,6 @@
   <data name="&gt;&gt;tpgConsumos.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="ctlFacturas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ctlFacturas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 8.25pt</value>
-  </data>
-  <data name="ctlFacturas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="ctlFacturas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="ctlFacturas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 344</value>
-  </data>
-  <data name="ctlFacturas.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ctlFacturas.Name" xml:space="preserve">
-    <value>ctlFacturas</value>
-  </data>
-  <data name="&gt;&gt;ctlFacturas.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlFacturas, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlFacturas.Parent" xml:space="preserve">
-    <value>tpgFacturas</value>
-  </data>
-  <data name="&gt;&gt;ctlFacturas.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="tpgFacturas.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
@@ -299,36 +239,6 @@
   </data>
   <data name="&gt;&gt;tpgFacturas.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="ctlContabilidad.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ctlContabilidad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 8.25pt</value>
-  </data>
-  <data name="ctlContabilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="ctlContabilidad.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="ctlContabilidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 344</value>
-  </data>
-  <data name="ctlContabilidad.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ctlContabilidad.Name" xml:space="preserve">
-    <value>ctlContabilidad</value>
-  </data>
-  <data name="&gt;&gt;ctlContabilidad.Type" xml:space="preserve">
-    <value>N4_ClubSocial.GUI.ControlContabilidad, N4_ClubSocial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlContabilidad.Parent" xml:space="preserve">
-    <value>tpgContabilidad</value>
-  </data>
-  <data name="&gt;&gt;ctlContabilidad.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="tpgContabilidad.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
@@ -401,6 +311,9 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Principal</value>

@@ -31,7 +31,6 @@
             this.gbxFacturas = new System.Windows.Forms.GroupBox();
             this.btnPagarFactura = new System.Windows.Forms.Button();
             this.lstFacturas = new System.Windows.Forms.ListBox();
-            this.controlBusquedaSocio1 = new N4_ClubSocial.GUI.ControlBusquedaSocio();
             this.gbxFacturas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,20 +63,10 @@
             this.lstFacturas.Size = new System.Drawing.Size(296, 148);
             this.lstFacturas.TabIndex = 0;
             // 
-            // controlBusquedaSocio1
-            // 
-            this.controlBusquedaSocio1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.controlBusquedaSocio1.Location = new System.Drawing.Point(0, 0);
-            this.controlBusquedaSocio1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.controlBusquedaSocio1.Name = "controlBusquedaSocio1";
-            this.controlBusquedaSocio1.Size = new System.Drawing.Size(310, 96);
-            this.controlBusquedaSocio1.TabIndex = 4;
-            // 
             // ControlFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.controlBusquedaSocio1);
             this.Controls.Add(this.gbxFacturas);
             this.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -92,6 +81,5 @@
         private System.Windows.Forms.GroupBox gbxFacturas;
         private System.Windows.Forms.Button btnPagarFactura;
         private System.Windows.Forms.ListBox lstFacturas;
-        private ControlBusquedaSocio controlBusquedaSocio1;
     }
 }

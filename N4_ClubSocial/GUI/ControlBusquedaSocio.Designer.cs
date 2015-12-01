@@ -55,6 +55,7 @@
             this.btnBuscarSocio.TabIndex = 2;
             this.btnBuscarSocio.Text = "button1";
             this.btnBuscarSocio.UseVisualStyleBackColor = true;
+            this.btnBuscarSocio.Click += new System.EventHandler(this.btnBuscarSocio_Click);
             // 
             // txtCedulaSocio
             // 

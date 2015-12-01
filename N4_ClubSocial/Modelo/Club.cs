@@ -57,7 +57,7 @@ namespace N4_ClubSocial.Modelo
             return socio;
         }
 
-        public ArrayList AutorizadosSocio(string cedula)
+        public ArrayList ObtenerAutorizadosSocio(string cedula)
         {
             Socio socio = BuscarSocio(cedula);
             ArrayList autorizados = new ArrayList();

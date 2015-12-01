@@ -12,10 +12,15 @@ namespace N4_ClubSocial.GUI
 {
     public partial class ControlBusquedaSocio: UserControl
     {
-        public ControlBusquedaSocio()
+        #region Atributos interfaz
+        private Principal principal;
+        #endregion
+
+        public ControlBusquedaSocio(Principal principal)
         {
             InitializeComponent();
             ConfiguracionComponentes();
+            this.principal = principal;
         }
 
         private void ConfiguracionComponentes()
@@ -23,6 +28,11 @@ namespace N4_ClubSocial.GUI
             gbxBusquedaSocio.Text = Properties.Resources.BusquedaDeSocio;
             lblCedulaSocio.Text = Properties.Resources.CedulaSocio;
             btnBuscarSocio.Text = Properties.Resources.Buscar;
+        }
+
+        private void btnBuscarSocio_Click(object sender, EventArgs e)
+        {
+            principal.BuscarSocioAutorizado(txtCedulaSocio.Text);
         }
     }
 }

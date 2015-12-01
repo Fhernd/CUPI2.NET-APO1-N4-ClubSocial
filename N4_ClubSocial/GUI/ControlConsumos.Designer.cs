@@ -36,7 +36,6 @@
             this.lblConcepto = new System.Windows.Forms.Label();
             this.cbxClientes = new System.Windows.Forms.ComboBox();
             this.lblCliente = new System.Windows.Forms.Label();
-            this.controlBusquedaSocio1 = new N4_ClubSocial.GUI.ControlBusquedaSocio();
             this.gbxRegistroConsumos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,20 +113,10 @@
             this.lblCliente.TabIndex = 0;
             this.lblCliente.Text = "label1";
             // 
-            // controlBusquedaSocio1
-            // 
-            this.controlBusquedaSocio1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.controlBusquedaSocio1.Location = new System.Drawing.Point(0, 0);
-            this.controlBusquedaSocio1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.controlBusquedaSocio1.Name = "controlBusquedaSocio1";
-            this.controlBusquedaSocio1.Size = new System.Drawing.Size(310, 96);
-            this.controlBusquedaSocio1.TabIndex = 3;
-            // 
             // ControlConsumos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.controlBusquedaSocio1);
             this.Controls.Add(this.gbxRegistroConsumos);
             this.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -148,6 +137,5 @@
         private System.Windows.Forms.TextBox txtConcepto;
         private System.Windows.Forms.Label lblValor;
         private System.Windows.Forms.Label lblConcepto;
-        private ControlBusquedaSocio controlBusquedaSocio1;
     }
 }

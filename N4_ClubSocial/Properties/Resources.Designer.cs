@@ -205,6 +205,15 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Facturas.
         /// </summary>
         internal static string Facturas {
@@ -273,6 +282,24 @@ namespace N4_ClubSocial.Properties {
         internal static string RegistroConsumos {
             get {
                 return ResourceManager.GetString("RegistroConsumos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mensaje.
+        /// </summary>
+        internal static string Satisfactorio {
+            get {
+                return ResourceManager.GetString("Satisfactorio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El usuario ha sido ingresado..
+        /// </summary>
+        internal static string UsuarioRegistrado {
+            get {
+                return ResourceManager.GetString("UsuarioRegistrado", resourceCulture);
             }
         }
         

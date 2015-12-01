@@ -12,10 +12,15 @@ namespace N4_ClubSocial.GUI
 {
     public partial class ControlContabilidad : UserControl
     {
-        public ControlContabilidad()
+        #region Atributos interfaz
+        private Principal principal;
+        #endregion
+
+        public ControlContabilidad(Principal principal)
         {
             InitializeComponent();
             ConfiguracionComponentes();
+            this.principal = principal;
         }
 
         private void ConfiguracionComponentes()

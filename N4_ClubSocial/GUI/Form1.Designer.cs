@@ -36,15 +36,9 @@ namespace N4_ClubSocial
             this.tpgAfiliar = new System.Windows.Forms.TabPage();
             this.tpgAutorizados = new System.Windows.Forms.TabPage();
             this.tpgConsumos = new System.Windows.Forms.TabPage();
-            this.ctlConsumos = new N4_ClubSocial.GUI.ControlConsumos();
             this.tpgFacturas = new System.Windows.Forms.TabPage();
-            this.ctlFacturas = new N4_ClubSocial.GUI.ControlFacturas();
             this.tpgContabilidad = new System.Windows.Forms.TabPage();
-            this.ctlContabilidad = new N4_ClubSocial.GUI.ControlContabilidad();
             this.tabOperaciones.SuspendLayout();
-            this.tpgConsumos.SuspendLayout();
-            this.tpgFacturas.SuspendLayout();
-            this.tpgContabilidad.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabOperaciones
@@ -73,53 +67,34 @@ namespace N4_ClubSocial
             // 
             // tpgConsumos
             // 
-            this.tpgConsumos.Controls.Add(this.ctlConsumos);
             resources.ApplyResources(this.tpgConsumos, "tpgConsumos");
             this.tpgConsumos.Name = "tpgConsumos";
             this.tpgConsumos.UseVisualStyleBackColor = true;
             // 
-            // ctlConsumos
-            // 
-            resources.ApplyResources(this.ctlConsumos, "ctlConsumos");
-            this.ctlConsumos.Name = "ctlConsumos";
-            // 
             // tpgFacturas
             // 
-            this.tpgFacturas.Controls.Add(this.ctlFacturas);
             resources.ApplyResources(this.tpgFacturas, "tpgFacturas");
             this.tpgFacturas.Name = "tpgFacturas";
             this.tpgFacturas.UseVisualStyleBackColor = true;
             // 
-            // ctlFacturas
-            // 
-            resources.ApplyResources(this.ctlFacturas, "ctlFacturas");
-            this.ctlFacturas.Name = "ctlFacturas";
-            // 
             // tpgContabilidad
             // 
-            this.tpgContabilidad.Controls.Add(this.ctlContabilidad);
             resources.ApplyResources(this.tpgContabilidad, "tpgContabilidad");
             this.tpgContabilidad.Name = "tpgContabilidad";
             this.tpgContabilidad.UseVisualStyleBackColor = true;
-            // 
-            // ctlContabilidad
-            // 
-            resources.ApplyResources(this.ctlContabilidad, "ctlContabilidad");
-            this.ctlContabilidad.Name = "ctlContabilidad";
             // 
             // Principal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabOperaciones);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Principal";
             this.tabOperaciones.ResumeLayout(false);
-            this.tpgConsumos.ResumeLayout(false);
-            this.tpgFacturas.ResumeLayout(false);
-            this.tpgContabilidad.ResumeLayout(false);
             this.ResumeLayout(false);
 
-        }   
+        }
 
         #endregion
 
@@ -129,9 +104,6 @@ namespace N4_ClubSocial
         private System.Windows.Forms.TabPage tpgConsumos;
         private System.Windows.Forms.TabPage tpgFacturas;
         private System.Windows.Forms.TabPage tpgContabilidad;
-        private GUI.ControlConsumos ctlConsumos;
-        private GUI.ControlFacturas ctlFacturas;
-        private GUI.ControlContabilidad ctlContabilidad;
     }
 }
 

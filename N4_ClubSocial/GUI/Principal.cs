@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using System.Collections;
 using System.Windows.Forms;
 using N4_ClubSocial.GUI;
 using N4_ClubSocial.Modelo;
@@ -24,6 +16,9 @@ namespace N4_ClubSocial
         #region Atributos interfaz
         private ControlAfiliacion ctlAfiliacion;
         private ControlAutorizados ctlAutorizados;
+        private ControlConsumos ctlConsumos;
+        private ControlFacturas ctlFacturas;
+        private ControlContabilidad ctlContabilidad;
         #endregion
         public Principal()
         {
@@ -47,9 +42,22 @@ namespace N4_ClubSocial
             ctlAfiliacion = new ControlAfiliacion(this);
             ctlAfiliacion.Dock = DockStyle.Fill;
             tabOperaciones.TabPages[0].Controls.Add(ctlAfiliacion);
-            ctlAutorizados = new ControlAutorizados();
+
+            ctlAutorizados = new ControlAutorizados(this);
             ctlAutorizados.Dock = DockStyle.Fill;
             tabOperaciones.TabPages[1].Controls.Add(ctlAutorizados);
+
+            ctlConsumos = new ControlConsumos(this);
+            ctlConsumos.Dock = DockStyle.Fill;
+            tabOperaciones.TabPages[2].Controls.Add(ctlConsumos);
+
+            ctlFacturas = new ControlFacturas(this);
+            ctlFacturas.Dock = DockStyle.Fill;
+            tabOperaciones.TabPages[3].Controls.Add(ctlFacturas);
+
+            ctlContabilidad = new ControlContabilidad(this);
+            ctlContabilidad.Dock = DockStyle.Fill;
+            tabOperaciones.TabPages[4].Controls.Add(ctlContabilidad);
         }
 
         public void Afiliar(Socio socio)
@@ -57,10 +65,36 @@ namespace N4_ClubSocial
             try
             {
                 club.AfiliarSocio(socio);
+                MessageBox.Show(this, Properties.Resources.UsuarioRegistrado, Properties.Resources.Satisfactorio, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch(SocioExisteException ex)
             {
                 MessageBox.Show(this, ex.Message, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        public void BuscarSocioAutorizado(string cedula)
+        {
+            int cedulaEntero;
+
+            if(cedula.Equals(""))
+            {
+                MessageBox.Show(this, Properties.Resources.DebeIngresarCedula, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (Int32.TryParse(cedula, out cedulaEntero))
+            {
+                try
+                {
+                    ArrayList autorizados = club.ObtenerAutorizadosSocio(cedula);
+
+
+                    // Actualiza la interfaz:
+                    ctlAutorizados.CambiarAutorizados(autorizados);
+                }
+                catch(SocioExisteException see)
+                {
+                    MessageBox.Show(this, see.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

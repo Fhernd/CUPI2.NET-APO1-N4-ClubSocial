@@ -1,4 +1,7 @@
-﻿namespace N4_ClubSocial.GUI
+﻿using System;
+using System.Collections;
+
+namespace N4_ClubSocial.GUI
 {
     partial class ControlAutorizados
     {
@@ -33,7 +36,6 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnAgregarAutorizado = new System.Windows.Forms.Button();
-            this.controlBusquedaSocio1 = new N4_ClubSocial.GUI.ControlBusquedaSocio();
             this.gbxAutorizados.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,20 +85,10 @@
             this.btnAgregarAutorizado.Text = "button1";
             this.btnAgregarAutorizado.UseVisualStyleBackColor = true;
             // 
-            // controlBusquedaSocio1
-            // 
-            this.controlBusquedaSocio1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.controlBusquedaSocio1.Location = new System.Drawing.Point(0, 0);
-            this.controlBusquedaSocio1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.controlBusquedaSocio1.Name = "controlBusquedaSocio1";
-            this.controlBusquedaSocio1.Size = new System.Drawing.Size(310, 96);
-            this.controlBusquedaSocio1.TabIndex = 3;
-            // 
             // ControlAutorizados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.controlBusquedaSocio1);
             this.Controls.Add(this.btnAgregarAutorizado);
             this.Controls.Add(this.gbxAutorizados);
             this.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,6 +107,5 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.ListBox lbxAutorizados;
         private System.Windows.Forms.Button btnAgregarAutorizado;
-        private ControlBusquedaSocio controlBusquedaSocio1;
     }
 }

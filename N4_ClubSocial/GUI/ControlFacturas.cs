@@ -12,14 +12,23 @@ namespace N4_ClubSocial.GUI
 {
     public partial class ControlFacturas : UserControl
     {
-        public ControlFacturas()
+        #region Atributos interfaz
+        private ControlBusquedaSocio ctlBusquedaSocio;
+        private Principal principal;
+        #endregion
+        public ControlFacturas(Principal principal)
         {
             InitializeComponent();
             ConfiguracionComponentes();
+            this.principal = principal;
         } 
 
         private void ConfiguracionComponentes()
         {
+            ctlBusquedaSocio = new ControlBusquedaSocio(principal);
+            ctlBusquedaSocio.Location = new Point(0, 0);
+            this.Controls.Add(ctlBusquedaSocio);
+
             gbxFacturas.Text = Properties.Resources.Facturas;
             btnPagarFactura.Text = Properties.Resources.PagarFactura;
         }
