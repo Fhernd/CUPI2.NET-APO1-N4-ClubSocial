@@ -20,13 +20,13 @@ namespace N4_ClubSocial.GUI
         public ControlConsumos(Principal principal)
         {
             InitializeComponent();
-            ConfiguracionComponentes();
             this.principal = principal;
+            ConfiguracionComponentes();
         }
 
         private void ConfiguracionComponentes()
         {
-            ctlBusquedaSocio = new ControlBusquedaSocio(principal);
+            ctlBusquedaSocio = new ControlBusquedaSocio(principal, Operaciones.Consumos);
             ctlBusquedaSocio.Location = new Point(0, 0);
             this.Controls.Add(ctlBusquedaSocio);
 

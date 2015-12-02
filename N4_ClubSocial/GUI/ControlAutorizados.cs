@@ -15,18 +15,19 @@ namespace N4_ClubSocial.GUI
         #region Atributos interfaz
         private ControlBusquedaSocio ctlBusquedaSocio;
         private Principal principal;
+        private String cedula;
         #endregion
 
         public ControlAutorizados(Principal principal)
         {
             InitializeComponent();
-            ConfiguracionComponentes();
             this.principal = principal;
+            ConfiguracionComponentes();
         }
 
         private void ConfiguracionComponentes()
         {
-            ctlBusquedaSocio = new ControlBusquedaSocio(principal);
+            ctlBusquedaSocio = new ControlBusquedaSocio(principal, Operaciones.Autorizados);
             ctlBusquedaSocio.Location = new Point(0, 0);
             this.Controls.Add(ctlBusquedaSocio);
 
@@ -37,8 +38,33 @@ namespace N4_ClubSocial.GUI
 
         public void CambiarAutorizados(ArrayList autorizados)
         {
-            lbxAutorizados.Items.Clear();
+            //lbxAutorizados.Items.Clear();
             lbxAutorizados.DataSource = autorizados;
+        }
+        public void CambiarAutorizados(ArrayList autorizados, string cedula)
+        {
+            lbxAutorizados.Items.Clear();
+            this.cedula = cedula;
+            lbxAutorizados.DataSource = autorizados;
+        }
+
+        private void btnAgregarAutorizado_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Length > 0)
+            {
+                if (cedula.Length > 0)
+                {
+                    principal.AgregarAutorizado(cedula, txtNombre.Text);
+                }
+                else
+                {
+                    MessageBox.Show(this, Properties.Resources.DebeBuscarSocio, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show(this, Properties.Resources.DebeIngresarNombre, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

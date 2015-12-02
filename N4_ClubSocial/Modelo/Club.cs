@@ -75,9 +75,9 @@ namespace N4_ClubSocial.Modelo
             return autorizados;
         }
 
-        public void AgregarAutorizadoSocio(string cedula, string nombreAutorizado)
+        public void AgregarAutorizadoSocio(Socio socioAutorizado, string nombreAutorizado)
         {
-            Socio socio = BuscarSocio(cedula);
+            Socio socio = BuscarSocio(socioAutorizado.Cedula);
 
             if (socio == null)
             {
@@ -85,7 +85,14 @@ namespace N4_ClubSocial.Modelo
             }
             else
             {
-                socio.AgregarAutorizado(nombreAutorizado);
+                try
+                {
+                    socio.AgregarAutorizado(nombreAutorizado);
+                }
+                catch(AutorizadoExisteException aee)
+                {
+                    throw aee;
+                }
             }
         }
 

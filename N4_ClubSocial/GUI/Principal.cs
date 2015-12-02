@@ -67,34 +67,64 @@ namespace N4_ClubSocial
                 club.AfiliarSocio(socio);
                 MessageBox.Show(this, Properties.Resources.UsuarioRegistrado, Properties.Resources.Satisfactorio, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch(SocioExisteException ex)
+            catch (SocioExisteException ex)
             {
                 MessageBox.Show(this, ex.Message, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        public void BuscarSocioAutorizado(string cedula)
+        public void BuscarSocio(string cedula, Operaciones operacion)
         {
             int cedulaEntero;
 
-            if(cedula.Equals(""))
+            if (cedula.Equals(""))
             {
                 MessageBox.Show(this, Properties.Resources.DebeIngresarCedula, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (Int32.TryParse(cedula, out cedulaEntero))
             {
-                try
+                switch (operacion)
                 {
-                    ArrayList autorizados = club.ObtenerAutorizadosSocio(cedula);
+                    case Operaciones.Autorizados:
+                        try
+                        {
+                            ArrayList autorizados = club.ObtenerAutorizadosSocio(cedula);
 
+                            // Actualiza la interfaz:
+                            ctlAutorizados.CambiarAutorizados(autorizados, cedula);
+                        }
+                        catch (SocioExisteException see)
+                        {
+                            MessageBox.Show(this, see.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        break;
+                    case Operaciones.Consumos:
 
-                    // Actualiza la interfaz:
-                    ctlAutorizados.CambiarAutorizados(autorizados);
+                        break;
+                    case Operaciones.Facturas:
+
+                        break;
                 }
-                catch(SocioExisteException see)
-                {
-                    MessageBox.Show(this, see.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+        }
+
+        public void AgregarAutorizado(string cedulaSocio, string nombreAutorizado)
+        {
+            try
+            {
+                // Agregación del autorizado:
+                Socio socio = new Socio(cedulaSocio);
+                club.AgregarAutorizadoSocio(socio, nombreAutorizado);
+                ArrayList autorizados = club.ObtenerAutorizadosSocio(socio.Cedula);
+                ctlAutorizados.CambiarAutorizados(autorizados);
+            }
+            catch(SocioExisteException see)
+            {
+                MessageBox.Show(this, see.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch(AutorizadoExisteException aee)
+            {
+                MessageBox.Show(this, aee.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

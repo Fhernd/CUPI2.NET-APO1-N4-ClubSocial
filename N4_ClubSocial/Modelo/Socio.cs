@@ -52,6 +52,11 @@ namespace N4_ClubSocial.Modelo
             facturas = new ArrayList();
             autorizados = new ArrayList();
         }
+
+        public Socio(string cedula)
+        {
+            this.cedula = cedula;
+        }
         #endregion
 
         #region Métodos públicos

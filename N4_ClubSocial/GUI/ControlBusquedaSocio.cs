@@ -14,13 +14,15 @@ namespace N4_ClubSocial.GUI
     {
         #region Atributos interfaz
         private Principal principal;
+        private Operaciones operacion;
         #endregion
 
-        public ControlBusquedaSocio(Principal principal)
+        public ControlBusquedaSocio(Principal principal, Operaciones operacion)
         {
             InitializeComponent();
             ConfiguracionComponentes();
             this.principal = principal;
+            this.operacion = operacion;
         }
 
         private void ConfiguracionComponentes()
@@ -32,7 +34,7 @@ namespace N4_ClubSocial.GUI
 
         private void btnBuscarSocio_Click(object sender, EventArgs e)
         {
-            principal.BuscarSocioAutorizado(txtCedulaSocio.Text);
+            principal.BuscarSocio(txtCedulaSocio.Text, operacion);
         }
     }
 }

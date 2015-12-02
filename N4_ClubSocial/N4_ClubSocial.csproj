@@ -85,6 +85,7 @@
     <Compile Include="GUI\ControlFacturas.Designer.cs">
       <DependentUpon>ControlFacturas.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Operaciones.cs" />
     <Compile Include="GUI\Principal.cs">
       <SubType>Form</SubType>
     </Compile>

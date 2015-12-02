@@ -178,6 +178,15 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Primero debe buscar socio..
+        /// </summary>
+        internal static string DebeBuscarSocio {
+            get {
+                return ResourceManager.GetString("DebeBuscarSocio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to El valor de la cédula debe ser numérico..
         /// </summary>
         internal static string DebeCedulaSerNumerico {

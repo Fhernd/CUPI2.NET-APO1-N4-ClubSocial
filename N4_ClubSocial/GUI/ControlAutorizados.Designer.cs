@@ -84,6 +84,7 @@ namespace N4_ClubSocial.GUI
             this.btnAgregarAutorizado.TabIndex = 2;
             this.btnAgregarAutorizado.Text = "button1";
             this.btnAgregarAutorizado.UseVisualStyleBackColor = true;
+            this.btnAgregarAutorizado.Click += new System.EventHandler(this.btnAgregarAutorizado_Click);
             // 
             // ControlAutorizados
             // 

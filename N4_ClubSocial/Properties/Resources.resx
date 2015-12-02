@@ -156,6 +156,9 @@
   <data name="DatosPersonales" xml:space="preserve">
     <value>Datos Personales</value>
   </data>
+  <data name="DebeBuscarSocio" xml:space="preserve">
+    <value>Primero debe buscar socio.</value>
+  </data>
   <data name="DebeCedulaSerNumerico" xml:space="preserve">
     <value>El valor de la cédula debe ser numérico.</value>
   </data>
