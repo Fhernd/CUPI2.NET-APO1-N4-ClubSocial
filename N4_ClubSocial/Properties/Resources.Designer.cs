@@ -70,7 +70,7 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Afiliar.
+        ///   Looks up a localized string similar to A&amp;filiar.
         /// </summary>
         internal static string Afiliar {
             get {
@@ -79,7 +79,7 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Agregar Autorizado.
+        ///   Looks up a localized string similar to &amp;Agregar Autorizado.
         /// </summary>
         internal static string AgregarAutorizado {
             get {
@@ -97,7 +97,7 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Buscar.
+        ///   Looks up a localized string similar to &amp;Buscar.
         /// </summary>
         internal static string Buscar {
             get {
@@ -205,11 +205,29 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Debe ingresar el concepto de la factura..
+        /// </summary>
+        internal static string DebeIngresarConcepto {
+            get {
+                return ResourceManager.GetString("DebeIngresarConcepto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Debe ingresar el nombre del socio..
         /// </summary>
         internal static string DebeIngresarNombre {
             get {
                 return ResourceManager.GetString("DebeIngresarNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El valor del concepto debe ser numérico..
+        /// </summary>
+        internal static string DebeValorSerNumerico {
+            get {
+                return ResourceManager.GetString("DebeValorSerNumerico", resourceCulture);
             }
         }
         
@@ -232,6 +250,15 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No hay facturas por pagar..
+        /// </summary>
+        internal static string NoHayFacturasPorPagar {
+            get {
+                return ResourceManager.GetString("NoHayFacturasPorPagar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nombre.
         /// </summary>
         internal static string Nombre {
@@ -250,7 +277,7 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Opción 1.
+        ///   Looks up a localized string similar to Op&amp;ción 1.
         /// </summary>
         internal static string Opcion1 {
             get {
@@ -259,7 +286,7 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Opción 2.
+        ///   Looks up a localized string similar to Opció&amp;n 2.
         /// </summary>
         internal static string Opcion2 {
             get {
@@ -268,7 +295,7 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pagar Factura.
+        ///   Looks up a localized string similar to P&amp;agar Factura.
         /// </summary>
         internal static string PagarFactura {
             get {
@@ -277,7 +304,7 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registrar.
+        ///   Looks up a localized string similar to &amp;Registrar.
         /// </summary>
         internal static string Registrar {
             get {
@@ -291,6 +318,15 @@ namespace N4_ClubSocial.Properties {
         internal static string RegistroConsumos {
             get {
                 return ResourceManager.GetString("RegistroConsumos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to s.
+        /// </summary>
+        internal static string s {
+            get {
+                return ResourceManager.GetString("s", resourceCulture);
             }
         }
         

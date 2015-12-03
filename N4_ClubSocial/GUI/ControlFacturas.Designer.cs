@@ -1,4 +1,7 @@
-﻿namespace N4_ClubSocial.GUI
+﻿using System;
+using System.Collections;
+
+namespace N4_ClubSocial.GUI
 {
     partial class ControlFacturas
     {
@@ -53,6 +56,7 @@
             this.btnPagarFactura.TabIndex = 1;
             this.btnPagarFactura.Text = "button1";
             this.btnPagarFactura.UseVisualStyleBackColor = true;
+            this.btnPagarFactura.Click += new System.EventHandler(this.btnPagarFactura_Click);
             // 
             // lstFacturas
             // 

@@ -60,6 +60,11 @@ namespace N4_ClubSocial
             tabOperaciones.TabPages[4].Controls.Add(ctlContabilidad);
         }
 
+        private void ActualizarFacturas(string cedula)
+        {
+            ctlFacturas.CambiarFacturas(club.ObtenerFacturasSocio(cedula), cedula);
+        }
+
         public void Afiliar(Socio socio)
         {
             try
@@ -99,12 +104,27 @@ namespace N4_ClubSocial
                         }
                         break;
                     case Operaciones.Consumos:
+                        try
+                        {
+                            ArrayList autorizados = club.ObtenerAutorizadosSocio(cedula);
 
+                            // Actualización interfaz:
+                            ctlConsumos.CambiarClientes(autorizados, cedula);
+                        }
+                        catch (SocioExisteException see)
+                        {
+                            MessageBox.Show(this, see.Message, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                         break;
                     case Operaciones.Facturas:
-
+                        // Actualización interfaz:
+                        ctlFacturas.CambiarFacturas(club.ObtenerFacturasSocio(cedula), cedula);
                         break;
                 }
+            }
+            else
+            {
+                MessageBox.Show(this, Properties.Resources.DebeCedulaSerNumerico, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -118,14 +138,52 @@ namespace N4_ClubSocial
                 ArrayList autorizados = club.ObtenerAutorizadosSocio(socio.Cedula);
                 ctlAutorizados.CambiarAutorizados(autorizados);
             }
-            catch(SocioExisteException see)
+            catch (SocioExisteException see)
             {
-                MessageBox.Show(this, see.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, see.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            catch(AutorizadoExisteException aee)
+            catch (AutorizadoExisteException aee)
             {
-                MessageBox.Show(this, aee.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, aee.Message, Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        public void RegistrarConsumo(string cedula, string nombreCliente, string concepto, decimal valor)
+        {
+            try
+            {
+                club.RegistrarConsumo(cedula, nombreCliente, concepto, valor);
+            }
+            catch (SocioExisteException see)
+            {
+                MessageBox.Show(this, see.Message, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        public void PagarFactura(string cedula, int numeroCedula)
+        {
+            try
+            {
+                club.PagarFactura(cedula, numeroCedula);
+
+                ActualizarFacturas(cedula);
+            }
+            catch(SocioExisteException see)
+            {
+                MessageBox.Show(this, see.Message, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        #region Puntos de extensión
+        public void InvocarPuntoExtension1()
+        {
+            MessageBox.Show(this, club.MetodoExtension1(), Properties.Resources.Opcion1, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public void InvocarPuntoExtension2()
+        {
+            MessageBox.Show(this, club.MetodoExtension2(), Properties.Resources.Opcion2, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        #endregion  
     }
 }

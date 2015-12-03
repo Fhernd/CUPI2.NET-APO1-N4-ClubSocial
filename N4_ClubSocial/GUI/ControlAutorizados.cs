@@ -55,6 +55,8 @@ namespace N4_ClubSocial.GUI
                 if (cedula.Length > 0)
                 {
                     principal.AgregarAutorizado(cedula, txtNombre.Text);
+
+                    txtNombre.Text = "";
                 }
                 else
                 {

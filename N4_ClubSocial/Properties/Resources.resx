@@ -121,16 +121,16 @@
     <value>Advertencia</value>
   </data>
   <data name="Afiliar" xml:space="preserve">
-    <value>Afiliar</value>
+    <value>A&amp;filiar</value>
   </data>
   <data name="AgregarAutorizado" xml:space="preserve">
-    <value>Agregar Autorizado</value>
+    <value>&amp;Agregar Autorizado</value>
   </data>
   <data name="Autorizados" xml:space="preserve">
     <value>Autorizados</value>
   </data>
   <data name="Buscar" xml:space="preserve">
-    <value>Buscar</value>
+    <value>&amp;Buscar</value>
   </data>
   <data name="BusquedaDeSocio" xml:space="preserve">
     <value>Busqueda de Socio</value>
@@ -165,14 +165,23 @@
   <data name="DebeIngresarCedula" xml:space="preserve">
     <value>Debe ingresar un número de cédula.</value>
   </data>
+  <data name="DebeIngresarConcepto" xml:space="preserve">
+    <value>Debe ingresar el concepto de la factura.</value>
+  </data>
   <data name="DebeIngresarNombre" xml:space="preserve">
     <value>Debe ingresar el nombre del socio.</value>
+  </data>
+  <data name="DebeValorSerNumerico" xml:space="preserve">
+    <value>El valor del concepto debe ser numérico.</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
   <data name="Facturas" xml:space="preserve">
     <value>Facturas</value>
+  </data>
+  <data name="NoHayFacturasPorPagar" xml:space="preserve">
+    <value>No hay facturas por pagar.</value>
   </data>
   <data name="Nombre" xml:space="preserve">
     <value>Nombre</value>
@@ -181,19 +190,22 @@
     <value>Club</value>
   </data>
   <data name="Opcion1" xml:space="preserve">
-    <value>Opción 1</value>
+    <value>Op&amp;ción 1</value>
   </data>
   <data name="Opcion2" xml:space="preserve">
-    <value>Opción 2</value>
+    <value>Opció&amp;n 2</value>
   </data>
   <data name="PagarFactura" xml:space="preserve">
-    <value>Pagar Factura</value>
+    <value>P&amp;agar Factura</value>
   </data>
   <data name="Registrar" xml:space="preserve">
-    <value>Registrar</value>
+    <value>&amp;Registrar</value>
   </data>
   <data name="RegistroConsumos" xml:space="preserve">
     <value>Registro de Consumos</value>
+  </data>
+  <data name="s" xml:space="preserve">
+    <value>s</value>
   </data>
   <data name="Satisfactorio" xml:space="preserve">
     <value>Mensaje</value>

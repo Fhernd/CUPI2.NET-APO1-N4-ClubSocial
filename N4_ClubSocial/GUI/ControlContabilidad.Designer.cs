@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.gbxOpcion1 = new System.Windows.Forms.GroupBox();
-            this.gbxOpcion2 = new System.Windows.Forms.GroupBox();
             this.btnOpcion1 = new System.Windows.Forms.Button();
+            this.gbxOpcion2 = new System.Windows.Forms.GroupBox();
             this.btnOpcion2 = new System.Windows.Forms.Button();
             this.gbxOpcion1.SuspendLayout();
             this.gbxOpcion2.SuspendLayout();
@@ -46,6 +46,16 @@
             this.gbxOpcion1.TabStop = false;
             this.gbxOpcion1.Text = "groupBox1";
             // 
+            // btnOpcion1
+            // 
+            this.btnOpcion1.Location = new System.Drawing.Point(87, 38);
+            this.btnOpcion1.Name = "btnOpcion1";
+            this.btnOpcion1.Size = new System.Drawing.Size(135, 23);
+            this.btnOpcion1.TabIndex = 0;
+            this.btnOpcion1.Text = "button1";
+            this.btnOpcion1.UseVisualStyleBackColor = true;
+            this.btnOpcion1.Click += new System.EventHandler(this.btnOpcion1_Click);
+            // 
             // gbxOpcion2
             // 
             this.gbxOpcion2.Controls.Add(this.btnOpcion2);
@@ -56,15 +66,6 @@
             this.gbxOpcion2.TabStop = false;
             this.gbxOpcion2.Text = "groupBox2";
             // 
-            // btnOpcion1
-            // 
-            this.btnOpcion1.Location = new System.Drawing.Point(87, 38);
-            this.btnOpcion1.Name = "btnOpcion1";
-            this.btnOpcion1.Size = new System.Drawing.Size(135, 23);
-            this.btnOpcion1.TabIndex = 0;
-            this.btnOpcion1.Text = "button1";
-            this.btnOpcion1.UseVisualStyleBackColor = true;
-            // 
             // btnOpcion2
             // 
             this.btnOpcion2.Location = new System.Drawing.Point(87, 42);
@@ -73,6 +74,7 @@
             this.btnOpcion2.TabIndex = 0;
             this.btnOpcion2.Text = "button2";
             this.btnOpcion2.UseVisualStyleBackColor = true;
+            this.btnOpcion2.Click += new System.EventHandler(this.btnOpcion2_Click);
             // 
             // ControlContabilidad
             // 

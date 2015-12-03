@@ -31,5 +31,15 @@ namespace N4_ClubSocial.GUI
             gbxOpcion2.Text = Properties.Resources.Opcion2;
             btnOpcion2.Text = Properties.Resources.Opcion2;
         }
+
+        private void btnOpcion1_Click(object sender, EventArgs e)
+        {
+            principal.InvocarPuntoExtension1();
+        }
+
+        private void btnOpcion2_Click(object sender, EventArgs e)
+        {
+            principal.InvocarPuntoExtension2();
+        }
     }
 }

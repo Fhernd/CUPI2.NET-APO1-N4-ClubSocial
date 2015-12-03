@@ -55,6 +55,9 @@ namespace N4_ClubSocial.GUI
                     Socio socio = new Socio(cedula.ToString(), txtNombre.Text);
 
                     principal.Afiliar(socio);
+
+                    txtCedula.Text = "";
+                    txtNombre.Text = "";
                 }
                 else
                 {

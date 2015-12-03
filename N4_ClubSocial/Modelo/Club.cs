@@ -104,6 +104,10 @@ namespace N4_ClubSocial.Modelo
             {
                 throw new SocioExisteException("El socio con esa cédula existe.");
             }
+            else
+            {
+                socio.RegistrarConsumo(nombreCliente, concepto, valor);
+            }
         }
 
         public ArrayList ObtenerFacturasSocio(string cedula)

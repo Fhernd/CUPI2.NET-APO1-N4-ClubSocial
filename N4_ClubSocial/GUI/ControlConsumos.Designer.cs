@@ -1,4 +1,7 @@
-﻿namespace N4_ClubSocial.GUI
+﻿using System;
+using System.Collections;
+
+namespace N4_ClubSocial.GUI
 {
     partial class ControlConsumos
     {
@@ -63,6 +66,7 @@
             this.btnRegistrar.TabIndex = 6;
             this.btnRegistrar.Text = "button2";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // txtValor
             // 
@@ -98,6 +102,7 @@
             // 
             // cbxClientes
             // 
+            this.cbxClientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxClientes.FormattingEnabled = true;
             this.cbxClientes.Location = new System.Drawing.Point(157, 23);
             this.cbxClientes.Name = "cbxClientes";
