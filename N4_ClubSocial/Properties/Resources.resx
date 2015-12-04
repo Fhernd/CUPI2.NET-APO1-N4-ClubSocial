@@ -204,8 +204,8 @@
   <data name="RegistroConsumos" xml:space="preserve">
     <value>Registro de Consumos</value>
   </data>
-  <data name="s" xml:space="preserve">
-    <value>s</value>
+  <data name="AfiliarPestaña" xml:space="preserve">
+    <value>Afiliar</value>
   </data>
   <data name="Satisfactorio" xml:space="preserve">
     <value>Mensaje</value>
@@ -215,5 +215,8 @@
   </data>
   <data name="Valor" xml:space="preserve">
     <value>Valor</value>
+  </data>
+  <data name="NombreAplicacion" xml:space="preserve">
+    <value>OrtizOL - Club - [Cupi2.NET]</value>
   </data>
 </root>

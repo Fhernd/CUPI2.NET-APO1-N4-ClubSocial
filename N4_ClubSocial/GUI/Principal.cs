@@ -31,9 +31,9 @@ namespace N4_ClubSocial
 
         private void ConfiguracionComponentes()
         {
-            this.Text = Properties.Resources.Nombre;
+            this.Text = Properties.Resources.NombreAplicacion;
 
-            tabOperaciones.TabPages[0].Text = Properties.Resources.Afiliar;
+            tabOperaciones.TabPages[0].Text = Properties.Resources.AfiliarPestaña;
             tabOperaciones.TabPages[1].Text = Properties.Resources.Autorizados;
             tabOperaciones.TabPages[2].Text = Properties.Resources.Consumos;
             tabOperaciones.TabPages[3].Text = Properties.Resources.Facturas;

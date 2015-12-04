@@ -79,6 +79,15 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Afiliar.
+        /// </summary>
+        internal static string AfiliarPestaña {
+            get {
+                return ResourceManager.GetString("AfiliarPestaña", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &amp;Agregar Autorizado.
         /// </summary>
         internal static string AgregarAutorizado {
@@ -268,6 +277,15 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to OrtizOL - Club - [Cupi2.NET].
+        /// </summary>
+        internal static string NombreAplicacion {
+            get {
+                return ResourceManager.GetString("NombreAplicacion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Club.
         /// </summary>
         internal static string NombreApp {
@@ -318,15 +336,6 @@ namespace N4_ClubSocial.Properties {
         internal static string RegistroConsumos {
             get {
                 return ResourceManager.GetString("RegistroConsumos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to s.
-        /// </summary>
-        internal static string s {
-            get {
-                return ResourceManager.GetString("s", resourceCulture);
             }
         }
         
