@@ -1,9 +1,30 @@
-﻿using System;
+﻿// ===++===
+//
+//	OrtizOL - xCSw
+//
+//  Proyecto: Cupi2.NET
+//
+// ===--===
+/*============================================================
+//
+// Clase(s): `Socio`
+//
+// Propósito: Implementar y representar la entidad `Socio`
+// del dominio.
+//
+// Original: http://cupi2.uniandes.edu.co/sitio/index.php/cursos/apo1/nivel-4/club/visualizacion-codigo/socio
+//
+============================================================*/
+
+using System;
 using System.Collections;
 using N4_ClubSocial.Excepciones;
 
 namespace N4_ClubSocial.Modelo
 {
+    /// <summary>
+    /// Clase que representa la entidad `Socio`.
+    /// </summary>
     public class Socio
     {
         #region Atributos

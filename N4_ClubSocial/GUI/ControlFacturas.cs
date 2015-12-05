@@ -1,31 +1,66 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿// ===++===
+//
+//	OrtizOL - xCSw
+//
+//  Proyecto: Cupi2.NET
+//
+// ===--===
+/*============================================================
+//
+// Control(s): `ControlFacturas`
+//
+// Propósito: Implementar y representar el control para 
+// facturación.
+//
+// Original: http://cupi2.uniandes.edu.co/sitio/index.php/cursos/apo1/nivel-4/club/visualizacion-codigo/panelfacturas
+//
+============================================================*/
+
+using System;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
 using N4_ClubSocial.Modelo;
 
 namespace N4_ClubSocial.GUI
 {
+    /// <summary>
+    /// Control que representa la facturación del club.
+    /// </summary>
     public partial class ControlFacturas : UserControl
     {
         #region Atributos interfaz
+        /// <summary>
+        /// Control de búsqueda de socio.
+        /// </summary>
         private ControlBusquedaSocio ctlBusquedaSocio;
+        /// <summary>
+        /// Referencia al formulario principal de la aplicación.
+        /// </summary>
         private Principal principal;
+        /// <summary>
+        /// Cédula del socio actual.
+        /// </summary>
         private String cedula;
         #endregion
+
+        #region Constructores
+        /// <summary>
+        /// Crea un nuevo control de facturación.
+        /// </summary>
+        /// <param name="principal">Referencia al formulario principal de la aplicación.</param>
         public ControlFacturas(Principal principal)
         {
             InitializeComponent();
             this.principal = principal;
             ConfiguracionComponentes();
-        } 
+        }
+        #endregion
 
+        #region Métodos auxiliares de interfaz
+        /// <summary>
+        /// Configura los componentes de la interfaz.
+        /// </summary>
         private void ConfiguracionComponentes()
         {
             ctlBusquedaSocio = new ControlBusquedaSocio(principal, Operaciones.Facturas);
@@ -35,7 +70,12 @@ namespace N4_ClubSocial.GUI
             gbxFacturas.Text = Properties.Resources.Facturas;
             btnPagarFactura.Text = Properties.Resources.PagarFactura;
         }
-
+        
+        /// <summary>
+        /// Cambia las facturas respecto al número de cédula de un socio.
+        /// </summary>
+        /// <param name="facturas">Lista de facturas a mostrar.</param>
+        /// <param name="cedula">Cédula del socio.</param>
         public void CambiarFacturas(ArrayList facturas, string cedula)
         {
             this.cedula = cedula;
@@ -54,7 +94,14 @@ namespace N4_ClubSocial.GUI
                 lstFacturas.Items.Add(formatoFactura);
             }
         }
+        #endregion
 
+        #region Eventos
+        /// <summary>
+        /// Dispara el evento Click para el botón de pago de factura.
+        /// </summary>
+        /// <param name="sender">Generador del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void btnPagarFactura_Click(object sender, EventArgs e)
         {
             if (lstFacturas.Items.Count > 0)
@@ -73,5 +120,6 @@ namespace N4_ClubSocial.GUI
                 MessageBox.Show(this, Properties.Resources.NoHayFacturasPorPagar, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        #endregion
     }
 }

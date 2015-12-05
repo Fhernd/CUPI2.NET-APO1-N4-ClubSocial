@@ -1,4 +1,22 @@
-﻿using System;
+﻿// ===++===z
+//
+//	OrtizOL - xCSw
+//
+//  Proyecto: Cupi2.NET
+//
+// ===--===
+/*============================================================
+//
+// Clase de prueba: `ClubTest`
+//
+// Propósito: Probar el comportamiento y estado de objetos 
+// de la clase `Club`.
+//
+// Original: N/D
+//
+============================================================*/
+
+using System;
 using System.Collections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using N4_ClubSocial.Modelo;
@@ -6,21 +24,36 @@ using N4_ClubSocial.Excepciones;
 
 namespace N4_ClubSocialTest
 {
+    /// <summary>
+    /// Clase que representa las pruebas para la clase `Club`.
+    /// </summary>
     [TestClass]
     public class ClubTest
     {
         #region Atributos de prueba
+        /// <summary>
+        /// Socio del club.
+        /// </summary>
         private Socio socio;
+        /// <summary>
+        /// Club de socios.
+        /// </summary>
         private Club club;
         #endregion
 
         #region Configuración de escenarios de pruebas
+        /// <summary>
+        /// Configuración de escenario de pruebas no. 0.
+        /// </summary>
         public void ConfiguracionPrueba0()
         {
             club = new Club();
             socio = new Socio("1", "nombre1");
         }
 
+        /// <summary>
+        /// Configuración de escenarios de prueba no. 1.
+        /// </summary>
         public void ConfiguracionPrueba1()
         {
             club = new Club();
@@ -29,7 +62,9 @@ namespace N4_ClubSocialTest
         #endregion
 
         #region Métodos de prueba
-
+        /// <summary>
+        /// Prueba la afiliación y existencia de un socio.
+        /// </summary>
         [TestMethod]
         public void AfiliarSocioExisteTest()
         {
@@ -49,6 +84,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba la búsqueda de un socio.
+        /// </summary>
         [TestMethod]
         public void BuscarSocioTest()
         {
@@ -68,6 +106,9 @@ namespace N4_ClubSocialTest
             Assert.AreEqual(socio.Nombre, socio2.Nombre);
         }
 
+        /// <summary>
+        /// Prueba la obtención de autorizados de un socio.
+        /// </summary>
         [TestMethod]
         public void ObtenerAutorizadosSocio1Test()
         {
@@ -100,6 +141,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba la obtención de autorizados de un socio.
+        /// </summary>
         [TestMethod]
         public void ObtenerAutorizadosSocio2Test()
         {
@@ -118,6 +162,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba la agrega de un autorizado.
+        /// </summary>
         [TestMethod]
         public void AgregarAutorizado1Test()
         {
@@ -139,6 +186,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba la agregación de un autorizado.
+        /// </summary>
         [TestMethod]
         public void AgregarAutorizado2Test()
         {
@@ -188,6 +238,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba el registro de un consumo.
+        /// </summary>
         [TestMethod]
         public void RegistrarConsumo1Test()
         {
@@ -217,6 +270,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba el registro de un consumo.
+        /// </summary>
         [TestMethod]
         public void RegistrarConsumo2Test()
         {
@@ -234,6 +290,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba la obtención de facturas.
+        /// </summary>
         [TestMethod]
         public void ObtenerFacturas1Test()
         {
@@ -266,6 +325,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba la obtención de facturas.
+        /// </summary>
         [TestMethod]
         public void ObtenerFacturas2Test()
         {
@@ -283,8 +345,11 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba el pago de una factura.
+        /// </summary>
         [TestMethod]
-        public void PagarFacturaSocio1()
+        public void PagarFacturaSocio1Test()
         {
             ConfiguracionPrueba1();
 
@@ -310,8 +375,11 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba el pago de una factura.
+        /// </summary>
         [TestMethod]
-        public void PagarFacturaSocioSocio2Test()
+        public void PagarFacturaSocio2Test()
         {
             // Cuando el socio no existe...
             try

@@ -1,26 +1,65 @@
-﻿using System;
+﻿// ===++===
+//
+//	OrtizOL - xCSw
+//
+//  Proyecto: Cupi2.NET
+//
+// ===--===
+/*============================================================
+//
+// Control(es): `ControlConsumo`
+//
+// Propósito: Implementar y representar control de 
+// consumos del club.
+//
+// Original: http://cupi2.uniandes.edu.co/sitio/index.php/cursos/apo1/nivel-4/club/visualizacion-codigo/panelregistroconsumos
+//
+============================================================*/
+
+using System;
 using System.Collections;
-using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace N4_ClubSocial.GUI
 {
+    /// <summary>
+    /// Control que representa los consumos de los socios del club.
+    /// </summary>
     public partial class ControlConsumos : UserControl
     {
         #region Atributos interfaz
+        /// <summary>
+        /// Control de busqueda de socio.
+        /// </summary>
         private ControlBusquedaSocio ctlBusquedaSocio;
+        /// <summary>
+        /// Referencia al formulario principal de la aplicación.
+        /// </summary>
         private Principal principal;
+        /// <summary>
+        /// Cédula del socio actual.
+        /// </summary>
         private String cedula;
         #endregion
 
+        #region Constructores
+        /// <summary>
+        /// Crea un nuevo control de consumos.
+        /// </summary>
+        /// <param name="principal">Referencia al formulario principal de la aplicación.</param>
         public ControlConsumos(Principal principal)
         {
             InitializeComponent();
             this.principal = principal;
             ConfiguracionComponentes();
         }
+        #endregion
 
+        #region Métodos auxiliares de interfaz
+        /// <summary>
+        /// Configuración de los componentes de interfaz.
+        /// </summary>
         private void ConfiguracionComponentes()
         {
             ctlBusquedaSocio = new ControlBusquedaSocio(principal, Operaciones.Consumos);
@@ -34,6 +73,11 @@ namespace N4_ClubSocial.GUI
             btnRegistrar.Text = Properties.Resources.Registrar;
         }
 
+        /// <summary>
+        /// Cambia los autorizados para un socio dado.
+        /// </summary>
+        /// <param name="autorizados">Lista de autorizados.</param>
+        /// <param name="cedula">Cédula del socio.</param>
         public void CambiarClientes(ArrayList autorizados, string cedula)
         {
             this.cedula = cedula;
@@ -50,7 +94,14 @@ namespace N4_ClubSocial.GUI
                 cbxClientes.SelectedIndex = 0;
             }
         }
+        #endregion
 
+        #region Eventos
+        /// <summary>
+        /// Dispara el evento Click para registro de consumo.
+        /// </summary>
+        /// <param name="sender">Generador del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if(!txtConcepto.Equals(""))
@@ -72,5 +123,6 @@ namespace N4_ClubSocial.GUI
                 MessageBox.Show(this, Properties.Resources.DebeIngresarConcepto, Properties.Resources.Advertencia, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        #endregion
     }
 }

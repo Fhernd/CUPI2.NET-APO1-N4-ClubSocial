@@ -1,24 +1,57 @@
-﻿using System;
+﻿// ===++===z
+//
+//	OrtizOL - xCSw
+//
+//  Proyecto: Cupi2.NET
+//
+// ===--===
+/*============================================================
+//
+// Clase de prueba: `SocioTest`
+//
+// Propósito: Probar el comportamiento y estado de objetos 
+// de la clase `Socio`.
+//
+// Original: N/D
+//
+============================================================*/
+
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using N4_ClubSocial.Modelo;
 using System.Collections;
 
 namespace N4_ClubSocialTest
 {
+    /// <summary>
+    /// Clase que presenta las pruebas de la clase `Socio`.
+    /// </summary>
     [TestClass]
     public class SocioTest
     {
         #region Atributos
+        /// <summary>
+        /// Socio del club.
+        /// </summary>
         private Socio socio;
+        /// <summary>
+        /// Factura del socio.
+        /// </summary>
         private Factura factura;
         #endregion
 
         #region Configuración de escenarios de prueba
+        /// <summary>
+        /// Configuración de escenario de pruebas no. 0.
+        /// </summary>
         public void ConfiguracionPrueba0()
         {
             socio = new Socio("1", "Nombre1");
         }
 
+        /// <summary>
+        /// Configuración de escenario de pruebas no. 1.
+        /// </summary>
         public void ConfiguracionPrueba1()
         {
             socio = new Socio("2", "Nombre2");
@@ -26,6 +59,9 @@ namespace N4_ClubSocialTest
         #endregion
 
         #region Métodos de prueba
+        /// <summary>
+        /// Pureba la agregación de un autorizado.
+        /// </summary>
         [TestMethod]
         public void AgregarAutorizadoTest()
         {
@@ -57,6 +93,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Pureba de la agregación de un autorizado con el mismo nombre del socio.
+        /// </summary>
         [TestMethod]
         public void AgregarAutorizadoIgualSocioTest()
         {
@@ -74,6 +113,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba la eliminación de un autorizado.
+        /// </summary>
         [TestMethod]
         public void EliminarAutorizadoTest()
         {
@@ -99,6 +141,9 @@ namespace N4_ClubSocialTest
             }
         }
 
+        /// <summary>
+        /// Prueba el registro de facturas.
+        /// </summary>
         [TestMethod]
         public void RegistroFacturasTest()
         {
@@ -112,6 +157,9 @@ namespace N4_ClubSocialTest
             Assert.AreEqual(1, facturas.Count);
         }
 
+        /// <summary>
+        /// Prueba la eliminación de facturas.
+        /// </summary>
         [TestMethod]
         public void EliminarFacturasTest()
         {
@@ -129,6 +177,9 @@ namespace N4_ClubSocialTest
             Assert.AreEqual(0, nuevasFacturas.Count);
         }
 
+        /// <summary>
+        /// Prueba la agregación de facturas.
+        /// </summary>
         [TestMethod]
         public void AgregacionFacturasTest()
         {
