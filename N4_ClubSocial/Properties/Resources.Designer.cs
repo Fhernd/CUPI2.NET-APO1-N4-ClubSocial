@@ -314,11 +314,29 @@ namespace N4_ClubSocial.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Opción 1.
+        /// </summary>
+        internal static string Opcion1Titulo {
+            get {
+                return ResourceManager.GetString("Opcion1Titulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Opció&amp;n 2.
         /// </summary>
         internal static string Opcion2 {
             get {
                 return ResourceManager.GetString("Opcion2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opción 2.
+        /// </summary>
+        internal static string Opcion2Titulo {
+            get {
+                return ResourceManager.GetString("Opcion2Titulo", resourceCulture);
             }
         }
         

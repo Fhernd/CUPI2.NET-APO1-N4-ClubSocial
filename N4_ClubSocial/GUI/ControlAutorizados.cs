@@ -87,7 +87,6 @@ namespace N4_ClubSocial.GUI
         /// <param name="cedula">Cédula del socio.</param>
         public void CambiarAutorizados(ArrayList autorizados, string cedula)
         {
-            lbxAutorizados.Items.Clear();
             this.cedula = cedula;
             lbxAutorizados.DataSource = autorizados;
         }

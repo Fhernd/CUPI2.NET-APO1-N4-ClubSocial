@@ -266,7 +266,7 @@ namespace N4_ClubSocial
         /// </summary>
         public void InvocarPuntoExtension1()
         {
-            MessageBox.Show(this, club.MetodoExtension1(), Properties.Resources.Opcion1, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(this, club.PuntoExtension1(), Properties.Resources.Opcion1Titulo, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /// <summary>
@@ -274,7 +274,7 @@ namespace N4_ClubSocial
         /// </summary>
         public void InvocarPuntoExtension2()
         {
-            MessageBox.Show(this, club.MetodoExtension2(), Properties.Resources.Opcion2, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(this, club.PuntoExtension2(), Properties.Resources.Opcion2Titulo, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion  
     }

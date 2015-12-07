@@ -223,4 +223,10 @@
   <data name="NombreAplicacion" xml:space="preserve">
     <value>OrtizOL - Club - [Cupi2.NET]</value>
   </data>
+  <data name="Opcion1Titulo" xml:space="preserve">
+    <value>Opción 1</value>
+  </data>
+  <data name="Opcion2Titulo" xml:space="preserve">
+    <value>Opción 2</value>
+  </data>
 </root>

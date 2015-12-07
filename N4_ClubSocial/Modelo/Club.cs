@@ -214,7 +214,7 @@ namespace N4_ClubSocial.Modelo
         /// Punto de extensión número 1.
         /// </summary>
         /// <returns>Respuesta del punto de extensión número 1.</returns>
-        public String MetodoExtension1()
+        public String PuntoExtension1()
         {
             return "Respuesta 1";
         }
@@ -223,7 +223,7 @@ namespace N4_ClubSocial.Modelo
         /// Punto de extensión número 2.
         /// </summary>
         /// <returns>Respuesta del punto de extensión número 2.</returns>
-        public String MetodoExtension2()
+        public String PuntoExtension2()
         {
             return "Respuesta 2";
         }

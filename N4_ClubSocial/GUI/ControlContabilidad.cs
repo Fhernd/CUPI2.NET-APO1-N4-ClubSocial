@@ -53,10 +53,10 @@ namespace N4_ClubSocial.GUI
         /// </summary>
         private void ConfiguracionComponentes()
         {
-            gbxOpcion1.Text = Properties.Resources.Opcion1;
+            gbxOpcion1.Text = Properties.Resources.Opcion1Titulo;
             btnOpcion1.Text = Properties.Resources.Opcion1;
 
-            gbxOpcion2.Text = Properties.Resources.Opcion2;
+            gbxOpcion2.Text = Properties.Resources.Opcion2Titulo;
             btnOpcion2.Text = Properties.Resources.Opcion2;
         }
         #endregion
